@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <style>
+    .table-container {
+      background-color: gray;
+      height: 700px;
+      padding: 30px 50px;
+    }
+    .brand {
+      color: black;
+      font-weight: bold;
+    }
+    .color-primary {
+      color: deepskyblue;
+    }
+    th, td {
+      color: rgba(0, 191, 255, 0.522);
+      padding: 10px;
+    }
+    td {
+      border-top: 1px solid black;
+    }
+    .text-right {
+      text-align: right;
+    }
+    table {
+      padding: 10px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 1px 3px 15px black;
+    }
+    img {
+      height: 100%;
+    }
+  </style>
+
+  <div class="table-container">
+    <h1 class="color-primary">Your shopping cart</h1>
+    <table style="width: 100%;">
+      <thead>
+        <tr>
+          <th colspan="2">ITEM</th>
+          <th class="text-right">AMOUNT</th>
+          <th class="text-right">PRICE</th>
+          <th class="text-right">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img width="150px" src="https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_960_720.jpg" alt="">
+          </td>
+          <td>
+            <h2 style="color: black;">SONY</h2>
+            <p>FE 70-200 mm F2.8 GM OSS</p>
+          </td>
+          <td class="text-right">1</td>
+          <td class="text-right">$332.35</td>
+          <td class="text-right color-primary">$332.35</td>
+        </tr>
+        <tr>
+          <td>
+            <img width="150px" src="https://cdn.pixabay.com/photo/2013/07/13/11/41/lens-158471__340.png" alt="">
+          </td>
+          <td>
+            <h2 style="color: black;">SONY</h2>
+            <p>Sonnar T* E 24mm F1.8 ZA</p>
+          </td>
+          <td class="text-right">1</td>
+          <td class="text-right">$655.35</td>
+          <td class="text-right color-primary">$655.35</td>
+        </tr>
+        <tr>
+          <td style="font-size: 24px; font-weight: bold; padding-bottom: 30px;" class="text-right color-primary" colspan="5">$987.70</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="#">Edit your shopping cart</a>
+      <button style="padding: 15px 20px; background-color: navy; color: white; border: none; border-radius: 5px">Choose payment method</button>
+    </div>
+  </div>
+
+  <div>
+    <p style="font-size: 50px;">greetingss<span style="font-size: 24px; vertical-align: super;">안녕</span></p>
+  </div>
+</body>
+</html>
