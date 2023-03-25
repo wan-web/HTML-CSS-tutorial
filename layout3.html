@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <style>
+
+    .flex-container {
+      display: flex;
+      /* flex-direction: column; */
+      align-items: center;
+      height: 500px;
+    }
+
+    .flex-item {
+      height: 100px;
+      background-color: coral;
+      display: flex;
+      align-items: center;
+    }
+    .flex-item:first-child {
+      flex: 2;
+      justify-content: start;
+      padding-left: 10px;
+    }
+    .flex-item:not(:first-child) {
+      flex: 1;
+      justify-content: end;
+    }
+    ul {
+      display: flex;
+    }
+    li {
+      width: 25%;
+    }
+    @media screen and (max-width: 1200px) {
+      ul {
+        flex-wrap: wrap;
+      }
+      li {
+        width: 50%;
+      }
+    }
+    @media screen and (max-width: 768) {
+      ul {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="flex-container">
+    <div class="flex-item"><p>LOGO</p></div>
+    <div class="flex-item"><p>products</p></div>
+    <div class="flex-item"><p>services</p></div>
+  </nav>
+
+  <div>
+    <ul>
+      <li>
+        <h1>Fast Shipping</h1>
+        <p>Lorem, ipsum.</p>
+      </li>
+      <li>
+        <h1>Fast Shipping</h1>
+        <p>Lorem, ipsum.</p>
+      </li>
+      <li>
+        <h1>Fast Shipping</h1>
+        <p>Lorem, ipsum.</p>
+      </li>
+      <li>
+        <h1>Fast Shipping</h1>
+        <p>Lorem, ipsum.</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

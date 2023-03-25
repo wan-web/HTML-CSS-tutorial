@@ -123,3 +123,15 @@ span.red {
   color: white;
   background-color: red;
 }
+
+@media screen and (max-width: 1200px ) {
+  h3 {
+    color: tomato;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    color: blue;
+  }
+}
